@@ -12,3 +12,10 @@
     name: python3-pip
     state: latest
   become: yes
+
+# tasks file for ansible_vim
+- name: Install virtualenv
+  dnf:
+    name: python3-virtualenv
+    state: latest
+  become: yes
